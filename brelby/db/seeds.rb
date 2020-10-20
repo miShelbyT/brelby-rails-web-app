@@ -5,11 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.destroy_all
-Cupcake.destroy_all
-Wine.destroy_all
-Bakery.destroy_all
-WineShop.destroy_all
+# User.destroy_all
+# Cupcake.destroy_all
+# Wine.destroy_all
+# Bakery.destroy_all
+# WineShop.destroy_all
 
 15.times do
     User.create(name:Faker::TvShows::TwinPeaks.character, age:rand(15..75), email:Faker::Internet.email)
