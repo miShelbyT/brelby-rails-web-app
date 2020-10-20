@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-    has_many :orders
-    has_many :cupcakes, through: :orders
+	has_many :orders
+	has_many :cupcakes, through: :orders
 	has_many :wines, through: :orders
 		
 	validates :name, presence: true, uniqueness: true
