@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :wine_shops, only: [:show]
-  resources :bakeries, only: [:show]
+  get 'welcome/index'
+  resources :wine_shops, only: [:index]
+  resources :bakeries, only: [:index]
   resources :cupcakes
   resources :wines
 	resources :orders
